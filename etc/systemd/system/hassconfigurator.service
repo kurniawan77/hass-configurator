@@ -1,0 +1,11 @@
+[Unit]
+Description=HASS-PoC-Configurator
+After=network.target
+
+[Service]
+Type=simple
+#Set the path to your configurator.py location
+ExecStart=/usr/bin/python3 /home/homeassistant/.homeassistant/configurator/configurator.py /home/homeassistant/.homeassistant/configurator/settings.conf
+
+[Install]
+WantedBy=multi-user.target
