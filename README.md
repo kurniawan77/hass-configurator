@@ -10,16 +10,16 @@ There are no dependencies on Python modules that are not part of the standard li
 - Copy [configurator.py](configurator/configurator.py) to HASS configuration directory (e.g `cd /home/homeassistant/.homeassistant/configurator`)
 - Make it executable (`sudo chmod 755 configurator.py`)
 - (Optional) Set the `GIT` variable in configurator.py to `True` if [GitPython](https://gitpython.readthedocs.io/) is installed on your system
-- Copy [settings.conf](hass-configurator/configurator/settings.conf) to the same folder
+- Copy [settings.conf](configurator/settings.conf) to the same folder
 - Execute it (`sudo ./configurator.py /home/homeassistant/.homeassistant/configurator/settings.conf`) for testing purpose
 - To terminate the process do the usual `CTRL+C`, maybe once or twice
 
 
 ### Home Assistant
-- Add lines from [configuration.yaml](hass-configurator/configuration.yaml) into home-assistant configuration.yaml file
+- Add lines from [configuration.yaml](configuration.yaml) into home-assistant configuration.yaml file
 
 ### systemd
-- Copy [hassconfigurator.service](hass-configurator/etc/systemd/system/hassconfigurator.service) to `etc/systemd/system/`.
+- Copy [hassconfigurator.service](etc/systemd/system/hassconfigurator.service) to `etc/systemd/system/`.
 
 Integrate it as mentioned in the [HASS documentation](https://home-assistant.io/getting-started/autostart-systemd/). If you use this method you have to set the `BASEPATH` variable in settings.conf according to your environment.
 
