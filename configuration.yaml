@@ -3,6 +3,3 @@ panel_iframe:
     title: Configurator
     icon: mdi:wrench
     url: http://192.168.129.115:3218
-
-recorder:
-  purge_days: 3
