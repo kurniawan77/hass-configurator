@@ -7,7 +7,7 @@ credits to: https://github.com/danielperna84/hass-configurator
 
 ### Installation
 There are no dependencies on Python modules that are not part of the standard library. And all the fancy JavaScript libraries are loaded from CDN (which means this doesn't work when you're offline).  
-- Copy [configurator.py](hass-configurator/configurator/configurator.py) to HASS configuration directory (e.g `cd /home/homeassistant/.homeassistant/configurator`)
+- Copy [configurator.py](configurator/configurator.py) to HASS configuration directory (e.g `cd /home/homeassistant/.homeassistant/configurator`)
 - Make it executable (`sudo chmod 755 configurator.py`)
 - (Optional) Set the `GIT` variable in configurator.py to `True` if [GitPython](https://gitpython.readthedocs.io/) is installed on your system
 - Copy [settings.conf](hass-configurator/configurator/settings.conf) to the same folder
