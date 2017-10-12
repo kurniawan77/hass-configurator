@@ -1,5 +1,5 @@
 panel_iframe:
   configurator:
-    title: Configurator
+    title: 'Editor'
     icon: mdi:wrench
     url: http://192.168.129.115:3218
